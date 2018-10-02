@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bitcoin Survey</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="flex-container">
+    <header role="banner">
+      <h1 id="title">A Short Bitcoin Survey</h1>
+      <div class="description">
+        <p id="description">The main purpose of this survey is to retrieve data regarding the general public's interest & current knowledge on Bitcoin.</p>
+      </div>
+      <div id="description_2">
+        <p>With this newfound information, we plan on improving the user experience in our mobile and web apps to make it easier for people to Bitcoin's best features.</p>
+      </div>
+
+    <main>
+      <form id="survey-form">
+        <fieldset>
+          <legend id="user-info">User Information</legend>
+          <div>
+            <label id="name-label" for="name">*First Name: </label>
+            <input type="text" id="name" placeholder="John" required>
+          </div>
+
+          <div>
+            <label id="name-last-label" for="name-last">*Last Name: </label>
+            <input type="text" id="name-last" placeholder="Doe" required>
+          </div>
+
+          <div>
+            <label id="email-label" for="email">*Email: </label>
+            <input type="email" id="email" placeholder="j_doe@example.com" required>
+          </div>
+
+          <div>
+            <label id="number-label" for="number">*Age: </label>
+            <input type="number" id="number" placeholder="31" min="1" max="120" required>
+            <label id="years-label" for="number"> years</label>
+          </div>
+
+          <div>
+            <label id="dropdown-label" for="language">Primary Spoken Language:</label>
+              <select id="dropdown" name="language">
+                <option value="english">English</option>
+                <option value="laotian">Laotian</option>
+                <option value="spanish">Spanish</option>
+                <option value="arabic">Arabic</option>
+                <option value="french">French</option>
+                <option value="german">German</option>
+                <option value="hindi">Hindi</option>
+                <option value="japanese">Japanese</option>
+                <option value="chinese">Chinese</option>
+                <option value="korean">Korean</option>
+              </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend id="experience">Experience with Bitcoin</legend>
+
+          <div class="question">
+            <p>1. In which year did you first hear of Bitcoin?</p>
+              <div>
+                <select id="first-bitcoin" name="question-year">
+                  <option value="2009">2009</option>
+                  <option value="2010">2010</option>
+                  <option value="2011">2011</option>
+                  <option value="2012">2012</option>
+                  <option value="2013">2013</option>
+                  <option value="2014">2014</option>
+                  <option value="2015">2015</option>
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                </select>
+              </div>
+          </div>
+
+          <div class="question">
+            <p>2. Have you ever purchased any Bitcoin?</p>
+            <div>
+              <input type="radio" name="radio-purchase" id="purchase-yes" value="1">
+              <label id="purchase-yes-label" for="purchase-yes"> Yes</label>
+            </div>
+            <div>
+              <input type="radio" name="radio-purchase" id="purchase-no" value="2">
+              <label id="purchase-no-label" for="purchase-no"> No</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>3. Do you currently own any Bitcoin?</p>
+            <div>
+              <div>
+                <input type="radio" name="radio-own" id="own-yes" value="1">
+                <label id="own-yes-label" for="own-yes"> Yes</label>
+              </div>
+              <div>
+                <input type="radio" name="radio-own" id="own-no" value="2">
+                <label id="own-no-label" for="own-no"> No</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>4. Which of the following have you used Bitcoin for? Please check all that apply.</p>
+            <div>
+              <div>
+                <input type="checkbox" name="remittance" value="remittance">
+                <label id="remittance" for="remittance"> Remittance (i.e. - sending money to relatives in a different country)</label>
+              </div>
+              <div>
+                <input type="checkbox" name="exchange" value="exchange">
+                <label id="exchange" for="exchange"> Means of Exchange (i.e. - purchasing goods or services)</label>
+              </div>
+              <div>
+                <input type="checkbox" name="store" value="store">
+                <label id="store" for="store"> Store of wealth (i.e. - saving up for retirement)</label>
+              </div>
+              <div>
+                <input type="checkbox" name="speculation" value="speculation">
+                <label id="speculation" for="speculation"> Speculation (i.e. - buying and selling Bitcoin for investment purposes)</label>
+              </div>
+              <div>
+                <input type="checkbox" name="none" value="none">
+                <label id="none" for="none"> I don't own any Bitcoin.</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>5. When it comes to Bitcoin's features, which of the following topics do you wish to understand better? Please check all that apply.</p>
+            <div>
+              <div>
+                <input type="checkbox" name="decentral" value="decentral">
+                <label id="decentral" for="decentral"> Decentralization</label>
+              </div>
+              <div>
+                <input type="checkbox" name="privacy" value="privacy">
+                <label id="privacy" for="privacy"> Privacy & Anonymity</label>
+              </div>
+              <div>
+                <input type="checkbox" name="blockchain" value="blockchain">
+                <label id="blockchain" for="blockchain"> Blockchain Technology</label>
+              </div>
+              <div>
+                <input type="checkbox" name="token" value="token">
+                <label id="token" for="token"> Token Economics</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>6. If any, what are the barriers that prevent you from purchasing or from using Bitcoin? Please provide your answer using the text box below.</p>
+            <textarea>Please provide your answer here.</textarea>
+          </div>
+        </fieldset>
+        <button type="submit" id="submit">Submit</button>
+        <button type="reset" id="reset">Reset</button>
+      </form>
+    </main>
+  </body>
+</html>

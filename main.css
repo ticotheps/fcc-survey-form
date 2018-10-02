@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-image: url("https://wallpapercave.com/wp/wp2054311.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header, main {
+  background-color: white;
+  margin-left: 80px;
+  margin-right: 80px;
+  border: solid black 2px;
+  border-radius: 10px;
+  max-width: 800px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 60px;
+  color: rgb(252, 128, 5);
+  text-align: center;
+}
+
+#description, #description_2 {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+#survey-form {
+  padding: 10px 10px 10px 28px;
+  margin-bottom: 10px;
+}
+
+input[placeholder] {
+  font-style: italic;
+}
+
+label, input, select {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 7px;
+}
+
+fieldset {
+  margin: 15px 20px 10px 0px;
+}
+
+.question {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+}
