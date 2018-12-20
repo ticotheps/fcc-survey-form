@@ -103,7 +103,7 @@ button {
   }
 
   #title {
-    font-size: 45px;
+    font-size: 55px;
   }
 
   #description, #description_2 {
@@ -149,6 +149,11 @@ button {
 }
 
 @media (max-width: 375px) {
+
+  header {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
   #name, #name-last {
     width: 175px;
