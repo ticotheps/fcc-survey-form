@@ -125,13 +125,36 @@ button {
     font-size: 17px;
   }
 
+  #email {
+    width: 245px;
+  }
+
+  #number {
+    width: 50px;
+  }
+
   fieldset {
     margin-right: 10px;
     padding-left: 2px;
     padding-right: 2px;
   }
 
+  .question {
+    padding-bottom: 30px;
+  }
+
   button {
     background-color: white;
+  }
+}
+
+@media (max-width: 375px) {
+
+  #name, #name-last {
+    width: 175px;
+  }
+
+  #email {
+    width: 209px;
   }
 }
