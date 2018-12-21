@@ -92,14 +92,6 @@ button {
 
 @media (max-width: 414px) {
 
-  body {
-    margin-left: 5px;
-    margin-right: 5px;
-    background-image: url("https://wallpapercave.com/wp/wp2054311.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
   main {
     margin-right: 10px;
     margin-left: 10px;
