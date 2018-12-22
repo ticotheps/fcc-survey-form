@@ -15,7 +15,7 @@
 
       <header role="banner">
         <h1 id="title">A Short Bitcoin Survey</h1>
-        <img src="https://i2.wp.com/smartereum.com/wp-content/uploads/2018/02/Bitcoin-Price-Prediction-2018-from-founder-of-Pantera-Capital-Bitcoin-bull-run-to-start-in-2-weeks-BTC-News-Today-12-February-2018.jpg?resize=696%2C373&ssl=1" alt="Bitcoin rocketship blasting into space" />
+        <img class="btc-img" src="https://i2.wp.com/smartereum.com/wp-content/uploads/2018/02/Bitcoin-Price-Prediction-2018-from-founder-of-Pantera-Capital-Bitcoin-bull-run-to-start-in-2-weeks-BTC-News-Today-12-February-2018.jpg?resize=696%2C373&ssl=1" alt="Bitcoin rocketship blasting into space" />
         <div class="introduction">
           <p id="description">The main purpose of this survey is to retrieve
             data regarding the general public's interest & current knowledge
@@ -31,26 +31,26 @@
         <fieldset>
           <legend id="user-info">User Information</legend>
           <div>
-            <label id="name-label" for="name">*First Name: </label>
+            <label id="name-label" for="name">First Name: </label>
             <input type="text" id="name" placeholder="John" required>
           </div>
 
           <div>
-            <label id="name-last-label" for="name-last">*Last Name: </label>
+            <label id="name-last-label" for="name-last">Last Name: </label>
             <input type="text" id="name-last" placeholder="Doe" required>
           </div>
 
           <div>
-            <label id="email-label" for="email">*Email: </label>
-            <input type="email" id="email" placeholder="j_doe@example.com"
+            <label id="email-label" for="email">Email: </label>
+            <input type="email" id="email" placeholder="john_doe@example.com"
               required>
           </div>
 
           <div>
-            <label id="number-label" for="number">*Age: </label>
+            <label id="number-label" for="number">Age: </label>
             <input type="number" id="number" placeholder="31" min="1" max="120"
               required>
-            <label id="years-label" for="number"> years</label>
+            <label id="years-label" for="number">years</label>
           </div>
 
           <div>
@@ -75,109 +75,113 @@
           <legend id="experience">Experience with Bitcoin</legend>
 
           <div class="question">
-            <p>1. Have you ever heard of "Bitcoin" before this survey?</p>
-              <div>
-              <input type="radio" name="radio-heard" id="heard-yes"
-                value="1">
-              <label id="heard-yes-label" for="heard-yes"> Yes</label>
-            </div>
-            <div>
-              <input type="radio" name="radio-heard" id="heard-no"
-                value="2">
-              <label id="heard-no-label" for="heard-no"> No</label>
-            </div>
-          </div>
-          </div>
-
-          <div class="question">
-            <p>2. Have you ever purchased any Bitcoin?</p>
-            <div>
-              <input type="radio" name="radio-purchase" id="purchase-yes"
-                value="1">
-              <label id="purchase-yes-label" for="purchase-yes"> Yes</label>
-            </div>
-            <div>
-              <input type="radio" name="radio-purchase" id="purchase-no"
-                value="2">
-              <label id="purchase-no-label" for="purchase-no"> No</label>
-            </div>
-          </div>
-
-          <div class="question">
-            <p>3. Do you currently own any Bitcoin?</p>
-            <div>
-              <div>
-                <input type="radio" name="radio-own" id="own-yes" value="1">
-                <label id="own-yes-label" for="own-yes"> Yes</label>
+            <p id="question">1. Have you ever heard of "Bitcoin" before this survey?</p>
+            <div class="q-a-container flex-column">
+              <div class="answer-container flex-container flex-row">
+                <input type="radio" name="radio-heard" id="heard-yes"
+                    value="1">
+                <label class="answer" id="heard-yes-label" for="heard-yes"> Yes</label>
               </div>
-              <div>
-                <input type="radio" name="radio-own" id="own-no" value="2">
-                <label id="own-no-label" for="own-no"> No</label>
+              <div class="answer-container flex-container flex-row">
+                <input type="radio" name="radio-heard" id="heard-no"
+                    value="2">
+                <label class="answer" id="heard-no-label" for="heard-no"> No</label>
               </div>
             </div>
           </div>
 
           <div class="question">
-            <p>4. Which of the following have you used Bitcoin for? Please
+            <p id="question">2. Have you ever purchased any Bitcoin?</p>
+            <div class="q-a-container flex-column">
+              <div class="answer-container flex-container flex-row">
+                <input type="radio" name="radio-purchase" id="purchase-yes"
+                    value="1">
+                <label class="answer" id="purchase-yes-label" for="purchase-yes"> Yes</label>
+              </div>
+              <div class="answer-container flex-container flex-row">
+                <input type="radio" name="radio-purchase" id="purchase-no"
+                    value="2">
+                <label class="answer" id="purchase-no-label" for="purchase-no"> No</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p id="question">3. Do you currently own any Bitcoin?</p>
+            <div class="q-a-container flex-column">
+              <div class="answer-container flex-container flex-row">
+                <input type="radio" name="radio-own" id="own-yes"
+                    value="1">
+                <label class="answer" id="own-yes-label" for="own-yes"> Yes</label>
+              </div>
+              <div class="answer-container flex-container flex-row">
+                <input type="radio" name="radio-own" id="own-no"
+                    value="2">
+                <label class="answer" id="own-no-label" for="own-no"> No</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p id="question">4. Which of the following have you used Bitcoin for? Please
               check all that apply.</p>
-            <div>
-              <div>
-                <input type="checkbox" name="remittance" value="remittance">
-                <label id="remittance" for="remittance"> Remittance (i.e. -
+            <div class="q-a-container flex-column">
+              <div class="answer-container flex-container flex-row">
+                <input type="checkbox" id="remittance" name="remittance" value="remittance">
+                <label class="answer" for="remittance">Remittance (i.e. -
                   sending money to relatives in a different country)</label>
               </div>
-              <div>
-                <input type="checkbox" name="exchange" value="exchange">
-                <label id="exchange" for="exchange"> Means of Exchange (i.e. -
+              <div class="answer-container flex-container flex-row">
+                <input type="checkbox" id="exchange" name="exchange" value="exchange">
+                <label class="answer" for="exchange">Means of Exchange (i.e. -
                   purchasing goods or services)</label>
               </div>
-              <div>
-                <input type="checkbox" name="store" value="store">
-                <label id="store" for="store"> Store of wealth (i.e. -
+              <div class="answer-container flex-container flex-row">
+                <input type="checkbox" id="store" name="store" value="store">
+                <label class="answer" for="store">Store of wealth (i.e. -
                   saving up for retirement)</label>
               </div>
-              <div>
-                <input type="checkbox" name="speculation" value="speculation">
-                <label id="speculation" for="speculation"> Speculation (i.e. -
+              <div class="answer-container flex-container flex-row">
+                <input type="checkbox" id="speculation" name="speculation" value="speculation">
+                <label class="answer" for="speculation">Speculation (i.e. -
                   buying and selling Bitcoin for investment purposes)</label>
               </div>
-              <div>
-                <input type="checkbox" name="none" value="none">
-                <label id="none" for="none"> I don't own any Bitcoin.</label>
+              <div class="answer-container flex-container flex-row">
+                <input type="checkbox" id="none" name="none" value="none">
+                <label class="answer" for="none">I don't own any Bitcoin.</label>
               </div>
             </div>
           </div>
 
           <div class="question">
-            <p>5. When it comes to Bitcoin's features, which of the following
+            <p id="question">5. When it comes to Bitcoin's features, which of the following
               topics do you wish to understand better? Please check all that
               apply.</p>
-            <div>
-              <div>
-                <input type="checkbox" name="decentral" value="decentral">
-                <label id="decentral" for="decentral"> Decentralization</label>
+            <div class="q-a-container flex-column">
+              <div class="answer-container flex-container flex-row">
+                <input type="checkbox" id="decentral" name="decentral" value="decentral">
+                <label class="answer" for="decentral"> Decentralization</label>
               </div>
-              <div>
-                <input type="checkbox" name="privacy" value="privacy">
-                <label id="privacy" for="privacy"> Privacy & Anonymity</label>
+              <div class="answer-container flex-container flex-row">
+                <input type="checkbox" id="privacy" name="privacy" value="privacy">
+                <label class="answer" for="privacy"> Privacy & Anonymity</label>
               </div>
-              <div>
-                <input type="checkbox" name="blockchain" value="blockchain">
-                <label id="blockchain" for="blockchain"> Blockchain Technology
+              <div class="answer-container flex-container flex-row">
+                <input type="checkbox" id="blockchain" name="blockchain" value="blockchain">
+                <label class="answer" for="blockchain"> Blockchain Technology
                 </label>
               </div>
-              <div>
-                <input type="checkbox" name="token" value="token">
-                <label id="token" for="token"> Token Economics</label>
+              <div class="answer-container flex-container flex-row">
+                <input type="checkbox" id="token" name="token" value="token">
+                <label class="answer" for="token"> Token Economics</label>
               </div>
             </div>
           </div>
 
           <div class="question">
-            <p>6. If any, what are the barriers that prevent you from
-              purchasing or from using Bitcoin? Please provide your answer
-              using the text box below.</p>
-            <textarea>Please provide your answer here.</textarea>
+            <p id="question">6. If any, what are the barriers that prevent you from
+              purchasing or from using Bitcoin? Use the text box below.</p>
+            <textarea placeholder="Please provide your answer here"></textarea>
           </div>
         </fieldset>
 
@@ -185,6 +189,12 @@
         <button type="reset" id="reset">Reset</button>
 
       </form>
+      <section>
+        <p id="author">Created by Tico S. Thepsourinthone, 2018</p>
+      </section>
     </main>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+  </script>
   </body>
 </html>
